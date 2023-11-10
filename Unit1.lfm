@@ -1,0 +1,204 @@
+object Form1: TForm1
+  Left = 550
+  Height = 749
+  Top = 78
+  Width = 783
+  Caption = 'Form1'
+  ClientHeight = 749
+  ClientWidth = 783
+  LCLVersion = '2.2.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 560
+    Top = 0
+    Width = 783
+    Align = alClient
+    ClientHeight = 560
+    ClientWidth = 783
+    TabOrder = 0
+    object imgQRCode: TImage
+      Left = 1
+      Height = 558
+      Top = 1
+      Width = 781
+      Align = alClient
+      Center = True
+      Proportional = True
+      Stretch = True
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 189
+    Top = 560
+    Width = 783
+    ActivePage = tsPIX
+    Align = alBottom
+    Style = tsFlatButtons
+    TabIndex = 0
+    TabOrder = 1
+    object tsPIX: TTabSheet
+      Caption = 'PIX'
+      ClientHeight = 158
+      ClientWidth = 775
+      object pnPIX: TPanel
+        Left = 0
+        Height = 158
+        Top = 0
+        Width = 775
+        Align = alClient
+        BevelOuter = bvNone
+        ClientHeight = 158
+        ClientWidth = 775
+        TabOrder = 0
+        object edChave: TEdit
+          Left = 16
+          Height = 23
+          Top = 24
+          Width = 424
+          TabOrder = 0
+        end
+        object btGerarQRCodePIX: TButton
+          Left = 648
+          Height = 25
+          Top = 24
+          Width = 112
+          Caption = 'Gerar'
+          OnClick = btGerarQRCodePIXClick
+          TabOrder = 1
+        end
+        object edValor: TFloatSpinEdit
+          Left = 456
+          Height = 23
+          Top = 24
+          Width = 168
+          TabOrder = 2
+        end
+        object Label1: TLabel
+          Left = 456
+          Height = 15
+          Top = 8
+          Width = 26
+          Caption = 'Valor'
+          ParentColor = False
+        end
+        object Label2: TLabel
+          Left = 16
+          Height = 15
+          Top = 8
+          Width = 33
+          Caption = 'Chave'
+          ParentColor = False
+        end
+        object btSalvarPNG: TButton
+          Left = 648
+          Height = 25
+          Top = 70
+          Width = 112
+          Caption = 'Salvar PNG'
+          OnClick = btSalvarPNGClick
+          TabOrder = 3
+        end
+        object edNome: TEdit
+          Left = 16
+          Height = 23
+          Top = 72
+          Width = 424
+          TabOrder = 4
+        end
+        object lbNome: TLabel
+          Left = 16
+          Height = 15
+          Top = 56
+          Width = 109
+          Caption = 'Nome do Recebedor'
+          ParentColor = False
+        end
+        object edCidade: TEdit
+          Left = 456
+          Height = 23
+          Top = 72
+          Width = 168
+          TabOrder = 5
+        end
+        object lbCidade: TLabel
+          Left = 456
+          Height = 15
+          Top = 56
+          Width = 113
+          Caption = 'Cidade do Recebedor'
+          ParentColor = False
+        end
+        object edInfo: TEdit
+          Left = 16
+          Height = 23
+          Top = 120
+          Width = 744
+          TabOrder = 6
+        end
+        object lbInfo: TLabel
+          Left = 16
+          Height = 15
+          Top = 104
+          Width = 74
+          Caption = 'Info Adicional'
+          ParentColor = False
+        end
+      end
+    end
+    object tsTexto: TTabSheet
+      Caption = 'Texto'
+      ClientHeight = 158
+      ClientWidth = 775
+      object pnTexto: TPanel
+        Left = 0
+        Height = 158
+        Top = 0
+        Width = 775
+        Align = alClient
+        BevelOuter = bvNone
+        ClientHeight = 158
+        ClientWidth = 775
+        TabOrder = 0
+        object edTexto: TEdit
+          Left = 16
+          Height = 23
+          Top = 48
+          Width = 608
+          TabOrder = 0
+        end
+        object btGerarQRCodeTexto: TButton
+          Left = 648
+          Height = 25
+          Top = 24
+          Width = 112
+          Caption = 'Gerar'
+          OnClick = btGerarQRCodeTextoClick
+          TabOrder = 1
+        end
+        object lbTexto: TLabel
+          Left = 16
+          Height = 15
+          Top = 32
+          Width = 28
+          Caption = 'Texto'
+          ParentColor = False
+        end
+        object btSalvarPNG1: TButton
+          Left = 648
+          Height = 25
+          Top = 70
+          Width = 112
+          Caption = 'Salvar PNG'
+          OnClick = btSalvarPNGClick
+          TabOrder = 2
+        end
+      end
+    end
+  end
+  object ACBrPixCD1: TACBrPixCD
+    Recebedor.CodCategoriaComerciante = 0
+    Left = 56
+    Top = 24
+  end
+end
